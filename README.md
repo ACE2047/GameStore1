@@ -1,1 +1,1 @@
-# GameStore1
+# GameStore
