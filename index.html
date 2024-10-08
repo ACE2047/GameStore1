@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="./js/application.js" defer></script>
+    <link rel="stylesheet" href="./css/page.css">
+    <title>The Game Hub</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img id="logo" src="./img/logo.webp" alt="Logo.webp" />
+            <h1 id="web-name">The Game Hub</h1>
+        </div>
+        <div class="search-form" method="post">
+            <div id="game-container">
+                <input id="searchInput" type="text" name="search" placeholder="Search games...">
+                <button id="searchBt" class="search-button" type="button" onclick="app.search()">Search</button>
+            </div>
+        </div>
+        <h2> <button id="home-nav" onclick="app.createMainPage()"> Home</button></h2>
+    </header>
+    <div class="game-container"> </div>
+        <div class="sidebar-left"></div>
+        <div class="middle-section"></div>
+        <div class="sidebar-right"></div>
+   
+    <footer>
+        &copy; 2023 The Game Hub. All rights reserved.
+    </footer>
+    
+</body>
+</html>
+ 

@@ -1,0 +1,324 @@
+body {
+   font-family: Arial, sans-serif;
+   display: grid;
+   grid-template-columns: 1fr 200px 1350px 200px 1fr; /* Left gap, left sidebar, flexible content area, right sidebar, right gap */
+   grid-template-rows: auto 1fr auto; /* Header, main content, footer */
+   grid-gap: 0; /* Adjust the gap between grid areas */
+   grid-template-areas:
+       "header header header header header"
+       ". sidebar-left content sidebar-right ."
+       "footer footer footer footer footer";
+   min-height: 100vh;
+   background-color: #f2f2f2; /* Light gray background */
+   margin: 0 auto; /* Center the grid layout horizontally */
+}
+
+header {
+   grid-area: header;
+   background-color: #005064;
+   color: #ffffff;
+   padding: 10px;
+   display: grid;
+   grid-template-columns: auto 1fr auto; /* Logo, Search Bar, Navigation Links */
+   align-items: center;
+}
+
+header h1 {
+   margin: 0;
+   padding-left: 0;
+}
+
+.logo-container {
+   display: flex;
+   align-items: center;
+}
+
+#logo {
+   width: 30px;
+   height: 30px;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10px; /* Add margin to separate logo from text */
+}
+
+#logo img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.search-form {
+   display: flex;
+   align-items: center;
+   justify-content: center; /* Center the search form */
+}
+
+.search-form input[type="text"] {
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   margin-right: 10px;
+   font-size: 16px; /* Increased font size */
+   width: 300px; /* Increased width */
+}
+
+.search-form button[type="search"] {
+   padding: 10px 20px;
+   background-color: #005064;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px; /* Increased font size */
+}
+/* Styles for Home and Next buttons */
+#home-nav, .prev-button, .next-button, .search-button {
+   font-size: 1.2rem;
+   padding: 10px 20px;
+   border-radius: 5px;
+   background-color: #b5e8eb;
+   color: rgb(0, 0, 0);
+   border: none;
+   cursor: pointer;
+}
+.nav-links {
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 10px;
+}
+
+.nav-links button {
+   background-color: #cffff0; /* Different color for the Home button */
+   color: #005064; /* Different text color for the Home button */
+   border: none;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.nav-links button:hover {
+   background-color: #b2fff0; /* Different hover color for the Home button */
+}
+
+.middle-section {
+   grid-area: content;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); /* Display 4 columns */
+   grid-auto-rows: (250px, auto); /* Adjust the height as needed */
+   gap: 20px; /* Adjust the gap between product cards */
+   padding: 20px;
+   background-color: #ffffff; /* White background */
+   width: 100%; /* Make the middle section fill the available space */
+   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.sidebar-left {
+   grid-area: sidebar-left;
+   background-color: #d9d9d9; /* Light gray */
+   padding: 20px;
+   color: #333; /* Dark text color */
+}
+
+.sidebar-left a {
+   display: block;
+   color: #333;
+   text-decoration: none;
+   margin-bottom: 5px;
+}
+
+.sidebar-left a:hover {
+   text-decoration: underline;
+}
+
+.sidebar-right {
+   grid-area: sidebar-right;
+   background-color: #d9d9d9; /* Light gray */
+   padding: 20px;
+   color: #333; /* Dark text color */
+}
+
+.sidebar-right button {
+   background-color: #005064; /* Dark blue */
+   color: #fff; /* White text */
+   border: none;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+   margin: 5px 0; /* Add vertical margin for spacing */
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.sidebar-right button:hover {
+   background-color: #003844; /* Darker shade of blue on hover */
+}
+/* Shopping Cart Styles */
+#shoppingCart {
+   padding: 10px;
+   background-color: #f5f5f5;
+   border: 1px solid #ddd;
+}
+
+#cartItems {
+   margin-bottom: 10px;
+}
+
+.cartItem {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 5px;
+}
+
+.cartItem button {
+   background-color: #ff4d4d;
+   color: white;
+   border: none;
+   padding: 5px 10px;
+   cursor: pointer;
+}
+
+
+.product-card {
+   background-color: #f2f2f2;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   padding: 10px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   height: 350px; /* Fixed height */
+}
+.add-to-cart-btn {
+   background-color: #005064;
+   color: #fff;
+   border: none;
+   padding: 8px 16px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   margin: 10px 0;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+   background-color: #003844;
+}
+.product-card:hover {
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+   width: 100%; /* Adjust as needed */
+   max-width: 300px; /* Maximum width */
+   border-radius: 5px 5px 0 0;
+   object-fit: contain; /* Ensure the image maintains aspect ratio */
+}
+
+.main-page-image {
+   width: 200px; /* Desired width for main page images */
+   object-fit: contain; /* Ensure the image maintains aspect ratio */
+}
+
+.product-card h3 {
+   margin: 10px 0 5px;
+}
+
+.product-card p {
+   margin: 5px 0;
+   color: #666;
+   flex: 1; /* Ensure the description uses available space */
+}
+
+.game-card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #fff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   text-align: center;
+}
+
+.game-card img {
+   max-width: 200px;
+   max-height: 200px;
+}
+
+.product-name {
+   font-size: 1.2rem;
+   margin-bottom: 5px;
+}
+
+.price {
+   font-size: 1rem;
+   margin-bottom: 5px;
+}
+
+.brief-description {
+   font-size: 0.9rem;
+   margin-bottom: 10px;
+}
+
+.content-container {
+   max-width: 800px; /* Smaller content card size */
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #fff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#prod-name {
+   font-size: 2rem;
+   margin-bottom: 10px;
+}
+
+#prod-price {
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+
+.descript-header {
+   font-size: 1.2rem;
+   margin-bottom: 5px;
+}
+
+#prod-description {
+   font-size: 1rem;
+   margin-bottom: 20px;
+}
+
+#prod-tags {
+   font-size: 0.9rem;
+   margin-bottom: 10px;
+}
+
+.content-image {
+   width: 900px; /* Desired width */
+   margin-bottom: 20px;
+   border-radius: 5px;
+   object-fit: contain;
+}
+
+footer {
+   grid-area: footer;
+   background-color: #005064; /* Match header background color */
+   color: #fff; /* Match header text color */
+   padding: 10px; /* Match header padding */
+   text-align: center;
+}

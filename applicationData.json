@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "The Witcher 3: Wild Hunt",
+    "price": "$39.99",
+    "shortDescription": "Embark on an epic fantasy adventure as a monster hunter.",
+    "longDescription": "Delve into the immersive world of The Witcher 3: Wild Hunt as Geralt of Rivia, a skilled monster hunter on a quest to find his adopted daughter. Navigate through a morally gray fantasy realm filled with political intrigue, mythical creatures, and gripping narrative choices. With its vast open world, engaging combat mechanics, and rich storytelling, The Witcher 3 offers hundreds of hours of exploration and adventure. Dive deep into side quests, forge alliances, and shape the fate of the Northern Kingdoms in this critically acclaimed action RPG experience.",
+    "image": "img/Witcher3.jpg",
+    "tags": ["RPG", "open-world", "fantasy", "adventure"],
+    "path": "/The-Witcher"
+  },
+  {
+    "id": 2,
+    "name": "Grand Theft Auto V",
+    "price": "$29.99",
+    "shortDescription": "Experience the world of crime and chaos in this open-world action game.",
+    "longDescription": "Explore the sprawling metropolis of Los Santos and the surrounding countryside in Grand Theft Auto V, a crime-filled open-world adventure. Follow the interconnected stories of three distinct criminals as they plan and execute a series of daring heists in a morally ambiguous world. With its immersive narrative, dynamic characters, and diverse range of activities, GTA V offers an unparalleled sandbox experience. Engage in high-speed car chases, intense shootouts, and immersive multiplayer modes in this groundbreaking action-adventure game.",
+    "image": "img/GTA-V-Background1.jpg",
+    "tags": ["Action", "open-world", "crime", "multiplayer"],
+    "path": "/GTAV"
+  },
+  {
+    "id": 3,
+    "name": "Helldivers 2",
+    "price": "$39.99",
+    "shortDescription": "Join the elite Helldivers squad and defend humanity against alien threats.",
+    "longDescription": "Join the elite Helldivers squad in their fight against intergalactic threats across procedurally generated planets in this intense top-down twin-stick shooter. Coordinate with teammates, deploy advanced weaponry, and unleash chaos as you battle against hordes of alien enemies. With improved visuals, expanded gameplay mechanics, and seamless cooperative multiplayer, Helldivers 2 offers an adrenaline-fueled sci-fi experience like no other. Prepare for epic battles, strategic challenges, and endless replayability in this highly anticipated sequel.",
+    "image": "img/Helldiver2.webp",
+    "tags": ["Shooter", "cooperative", "action", "sci-fi", "sequel"],
+    "path": "/Helldivers-2"
+  },
+  {
+    "id": 4,
+    "name": "Warframe",
+    "price": "Free",
+    "shortDescription": "Become a powerful warrior in this free-to-play cooperative action game.",
+    "longDescription": "Enter the futuristic world of Warframe as a member of the Tenno, ancient warriors wielding powerful exoskeleton suits known as Warframes. Master the art of combat as you traverse through a vast universe battling against oppressive factions and uncovering ancient secrets. With its fast-paced gameplay, deep customization options, and cooperative multiplayer modes, Warframe offers an immersive sci-fi experience. Explore diverse planets, engage in intense missions, and unleash your inner space ninja in this free-to-play action-packed adventure.",
+    "image": "img/Warframe.png",
+    "tags": ["Shooter", "cooperative", "action", "sci-fi"],
+    "path": "/Warframe"
+  },
+  {
+    "id": 5,
+    "name": "Minecraft",
+    "price": "$26.99",
+    "shortDescription": "Build, explore, and survive in this sandbox construction game.",
+    "longDescription": "Embark on a journey of endless possibilities in the blocky world of Minecraft, where you can build, explore, and survive in procedurally generated landscapes. Gather resources, craft tools, and construct intricate structures in this beloved sandbox adventure game. With its iconic pixelated graphics, infinite creativity, and boundless exploration, Minecraft offers an immersive experience for players of all ages. Join friends in multiplayer servers, embark on epic quests, and unleash your imagination in this timeless gaming phenomenon.",
+    "image": "img/Minecraft.jpg",
+    "tags": ["Sandbox", "survival", "building", "multiplayer"],
+    "path": "/Minecraft"
+  },
+  {
+    "id": 6,
+    "name": "Overwatch 2",
+    "price": "Free",
+    "shortDescription": "Join the fight as a hero in this team-based multiplayer shooter.",
+    "longDescription": "Immerse yourself in the fast-paced world of Overwatch 2, a team-based first-person shooter featuring a diverse cast of heroes with unique abilities. Work together with your team to secure objectives, outmaneuver your opponents, and dominate the battlefield in exhilarating multiplayer matches. With its colorful visuals, dynamic gameplay mechanics, and strategic depth, Overwatch 2 offers endless replayability and competitive excitement. Master the art of teamwork, coordinate powerful combos, and rise through the ranks in this adrenaline-fueled shooter experience.",
+    "image": "img/overwatch2.jpg",
+    "tags": ["Shooter", "multiplayer", "team-based", "hero-based"],
+    "path": "/Overwatch-2"
+  },
+  {
+    "id": 7,
+    "name": "Animal Crossing: New Horizons",
+    "price": "$59.99",
+    "shortDescription": "Create your own island paradise and enjoy a relaxing life simulation.",
+    "longDescription": "Escape to your own deserted island paradise in Animal Crossing: New Horizons, where you can create, customize, and explore to your heart's content. Build your dream home, interact with charming villagers, and enjoy a variety of relaxing activities such as fishing, bug catching, and gardening. With its charming art style, relaxing gameplay, and endless customization options, Animal Crossing offers a tranquil escape from the hustle and bustle of everyday life. Connect with friends online, host virtual events, and create memories in this heartwarming life simulation game.",
+    "image": "img/AnimalCrossing.avif",
+    "tags": ["Simulation", "life-simulation", "relaxation", "multiplayer"],
+    "path": "/Animal-Crossing"
+  },
+  {
+    "id": 8,
+    "name": "Call of Duty: Warzone",
+    "price": "Free",
+    "shortDescription": "Experience intense battle royale action in this free-to-play shooter.",
+    "longDescription": "Dive into the adrenaline-fueled battleground of Call of Duty: Warzone, a free-to-play battle royale experience set in the iconic Call of Duty universe. Drop into the massive map of Verdansk, scavenge for weapons and equipment, and fight for survival against dozens of other players in intense last-man-standing battles. With its stunning visuals, responsive gunplay, and dynamic gameplay mechanics, Warzone delivers an immersive multiplayer experience like no other. Team up with friends, strategize your approach, and emerge victorious as the last squad standing in this thrilling military shooter.",
+    "image": "img/CODwarzone.webp",
+    "tags": ["Battle royale", "shooter", "multiplayer", "military"],
+    "path": "/Call-Of-Duty"
+  }
+]
